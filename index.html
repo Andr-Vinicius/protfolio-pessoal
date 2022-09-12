@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portifólio</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Barra de navegação -->
+    <section>
+        <div class="barra-nav"> 
+            <a href="#" class="active">Inicio</a>
+            <a href="#sobre" style="text-transform: none;">Sobre mim</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </div>
+    </section>
+
+    <!-- Inicio -->
+    <div class="inicio">
+        <p> Olá, meu nome é <span id="efeito">Vinicius.</span></p>
+        <p>Tentando ser desenvolvedor Full-Stack</p>
+    </div>
+    <!-- Imagem ao lado-->
+    <div class="imagem">
+        <img src="./images/WhatsApp Image 2022-08-17 at 18.08.19.jpeg" alt="">
+    </div>
+
+    <section id="sobre">
+        <div class="sobre">
+            <span>Sobre mim</span>
+            <p>Sou proativo, determinado e apaixonado por computação. Sempre gostei de computadores, mas só 
+                tive meu primeiro contato com programação na faculdade (estou no último semestre) e já fiquei
+                fascinado com as inúmeras possibilidades que esse ambiente proporciona. Acredito que o essencial 
+                nesse meio é sempre buscar alternativas criativas e ser persistente. Ainda tenho pouca experiência e 
+                por enquanto meus projetos são apenas os da faculdade, mas pretendo e irei melhorar isso. Meu 
+                principal objetivo tem sido a integração ao mercado de trabalho como programador Junior.</p>
+                <button class="btn-baixar">
+                    <a href="https://drive.google.com/u/0/uc?id=1HBJhGyqukU7v20fxhRQDbvpLb8ZRegZL&export=download">Currículo</a>
+                </button>                     
+        </div>
+    </section>
+
+    <section id="projetos">
+        <div class="projetos">
+            <span>Projetos</span>
+            <p>Aqui estão alguns projetos que eu já desenvolvi, sejam eles da faculdade, pessoais ou profissionais:</p>
+        </div>
+        <div class="emBreve">
+            <img src="./images/em-breve.gif" alt="">
+            <img src="./images/em-breve.gif" alt="">
+            <img src="./images/em-breve.gif" alt="">
+            <img src="./images/em-breve.gif" alt="">
+            <img src="./images/em-breve.gif" alt="">
+            <img src="./images/em-breve.gif" alt="">
+        </div>
+    </section>
+
+
+    <footer id="contato">
+        <div class="rodape">
+            <ul>
+                <li style="text-transform: none;"><span class="negrito">Email:</span>Andrade.vini2019@gmail.com</li>
+                <li><span class="negrito">Celular:</span>(19) 99198-1419</li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        "use strict";
+        function typeWriter(e){
+            const textArray = e.innerHTML.split("");
+            e.innerHTML = "";
+
+            textArray.forEach((letter, i) => {
+                setTimeout(() => (e.innerHTML += letter), 105 * i);
+            });
+        }
+        typeWriter(efeito);
+    </script>
+</body>
+</html>
