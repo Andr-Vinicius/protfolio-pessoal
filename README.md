@@ -1,2 +1,2 @@
 # protifolio-pessoal
-Um projeto relacionado ao meu portifolio.
+Projeto de portifolio com o uso de HTML, CSS e JS (Ainda falta a responsividade).
